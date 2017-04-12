@@ -1,4 +1,4 @@
-# Install script for directory: /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen-helloworld/source
+# Install script for directory: /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/source
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

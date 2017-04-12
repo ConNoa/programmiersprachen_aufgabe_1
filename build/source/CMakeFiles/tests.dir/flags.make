@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen-helloworld/external/catch-1.4.0 
+CXX_INCLUDES = -I/Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/external/catch-1.4.0 
 
