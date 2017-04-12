@@ -2,7 +2,7 @@
 #include "catch.hpp"
 #include <cmath>
 #include <iostream>
-//sdfghjjfdsdfghjk
+
 
 int gcd(int a, int b )
 {
