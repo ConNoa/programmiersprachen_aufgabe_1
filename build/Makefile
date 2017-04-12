@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+#=============================================================================
 # Target rules for targets named aufg13
 
 # Build rule for target.
@@ -124,17 +137,17 @@ aufg13/fast:
 .PHONY : aufg13/fast
 
 #=============================================================================
-# Target rules for targets named tests
+# Target rules for targets named aufg19
 
 # Build rule for target.
-tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tests
-.PHONY : tests
+aufg19: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 aufg19
+.PHONY : aufg19
 
 # fast build rule for target.
-tests/fast:
-	$(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/build
-.PHONY : tests/fast
+aufg19/fast:
+	$(MAKE) -f source/CMakeFiles/aufg19.dir/build.make source/CMakeFiles/aufg19.dir/build
+.PHONY : aufg19/fast
 
 #=============================================================================
 # Target rules for targets named helloworld
@@ -157,8 +170,9 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... aufg13"
 	@echo "... tests"
+	@echo "... aufg13"
+	@echo "... aufg19"
 	@echo "... helloworld"
 .PHONY : help
 

@@ -63,15 +63,17 @@ CMAKE_BINARY_DIR = /Users/Blueshift/Desktop/Programmiersprachen/programmiersprac
 # Directory level rules for directory source
 
 # Convenience name for "all" pass in the directory.
-source/all: source/CMakeFiles/aufg13.dir/all
 source/all: source/CMakeFiles/tests.dir/all
+source/all: source/CMakeFiles/aufg13.dir/all
+source/all: source/CMakeFiles/aufg19.dir/all
 source/all: source/CMakeFiles/helloworld.dir/all
 
 .PHONY : source/all
 
 # Convenience name for "clean" pass in the directory.
-source/clean: source/CMakeFiles/aufg13.dir/clean
 source/clean: source/CMakeFiles/tests.dir/clean
+source/clean: source/CMakeFiles/aufg13.dir/clean
+source/clean: source/CMakeFiles/aufg19.dir/clean
 source/clean: source/CMakeFiles/helloworld.dir/clean
 
 .PHONY : source/clean
@@ -80,6 +82,43 @@ source/clean: source/CMakeFiles/helloworld.dir/clean
 source/preinstall:
 
 .PHONY : source/preinstall
+
+#=============================================================================
+# Target rules for target source/CMakeFiles/tests.dir
+
+# All Build rule for target.
+source/CMakeFiles/tests.dir/all:
+	$(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/depend
+	$(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build/CMakeFiles --progress-num=7,8 "Built target tests"
+.PHONY : source/CMakeFiles/tests.dir/all
+
+# Include target in all.
+all: source/CMakeFiles/tests.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+source/CMakeFiles/tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build/CMakeFiles 0
+.PHONY : source/CMakeFiles/tests.dir/rule
+
+# Convenience name for target.
+tests: source/CMakeFiles/tests.dir/rule
+
+.PHONY : tests
+
+# clean rule for target.
+source/CMakeFiles/tests.dir/clean:
+	$(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/clean
+.PHONY : source/CMakeFiles/tests.dir/clean
+
+# clean rule for target.
+clean: source/CMakeFiles/tests.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target source/CMakeFiles/aufg13.dir
@@ -119,39 +158,39 @@ clean: source/CMakeFiles/aufg13.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target source/CMakeFiles/tests.dir
+# Target rules for target source/CMakeFiles/aufg19.dir
 
 # All Build rule for target.
-source/CMakeFiles/tests.dir/all:
-	$(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/depend
-	$(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build/CMakeFiles --progress-num=5,6 "Built target tests"
-.PHONY : source/CMakeFiles/tests.dir/all
+source/CMakeFiles/aufg19.dir/all:
+	$(MAKE) -f source/CMakeFiles/aufg19.dir/build.make source/CMakeFiles/aufg19.dir/depend
+	$(MAKE) -f source/CMakeFiles/aufg19.dir/build.make source/CMakeFiles/aufg19.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build/CMakeFiles --progress-num=3,4 "Built target aufg19"
+.PHONY : source/CMakeFiles/aufg19.dir/all
 
 # Include target in all.
-all: source/CMakeFiles/tests.dir/all
+all: source/CMakeFiles/aufg19.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-source/CMakeFiles/tests.dir/rule: cmake_check_build_system
+source/CMakeFiles/aufg19.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/tests.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufg19.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build/CMakeFiles 0
-.PHONY : source/CMakeFiles/tests.dir/rule
+.PHONY : source/CMakeFiles/aufg19.dir/rule
 
 # Convenience name for target.
-tests: source/CMakeFiles/tests.dir/rule
+aufg19: source/CMakeFiles/aufg19.dir/rule
 
-.PHONY : tests
-
-# clean rule for target.
-source/CMakeFiles/tests.dir/clean:
-	$(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/clean
-.PHONY : source/CMakeFiles/tests.dir/clean
+.PHONY : aufg19
 
 # clean rule for target.
-clean: source/CMakeFiles/tests.dir/clean
+source/CMakeFiles/aufg19.dir/clean:
+	$(MAKE) -f source/CMakeFiles/aufg19.dir/build.make source/CMakeFiles/aufg19.dir/clean
+.PHONY : source/CMakeFiles/aufg19.dir/clean
+
+# clean rule for target.
+clean: source/CMakeFiles/aufg19.dir/clean
 
 .PHONY : clean
 
@@ -162,7 +201,7 @@ clean: source/CMakeFiles/tests.dir/clean
 source/CMakeFiles/helloworld.dir/all:
 	$(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/depend
 	$(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build/CMakeFiles --progress-num=3,4 "Built target helloworld"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build/CMakeFiles --progress-num=5,6 "Built target helloworld"
 .PHONY : source/CMakeFiles/helloworld.dir/all
 
 # Include target in all.

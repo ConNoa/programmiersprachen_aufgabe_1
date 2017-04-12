@@ -111,21 +111,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-source/CMakeFiles/aufg13.dir/rule:
-	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufg13.dir/rule
-.PHONY : source/CMakeFiles/aufg13.dir/rule
-
-# Convenience name for target.
-aufg13: source/CMakeFiles/aufg13.dir/rule
-
-.PHONY : aufg13
-
-# fast build rule for target.
-aufg13/fast:
-	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f source/CMakeFiles/aufg13.dir/build.make source/CMakeFiles/aufg13.dir/build
-.PHONY : aufg13/fast
-
-# Convenience name for target.
 source/CMakeFiles/tests.dir/rule:
 	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/tests.dir/rule
 .PHONY : source/CMakeFiles/tests.dir/rule
@@ -141,6 +126,36 @@ tests/fast:
 .PHONY : tests/fast
 
 # Convenience name for target.
+source/CMakeFiles/aufg13.dir/rule:
+	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufg13.dir/rule
+.PHONY : source/CMakeFiles/aufg13.dir/rule
+
+# Convenience name for target.
+aufg13: source/CMakeFiles/aufg13.dir/rule
+
+.PHONY : aufg13
+
+# fast build rule for target.
+aufg13/fast:
+	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f source/CMakeFiles/aufg13.dir/build.make source/CMakeFiles/aufg13.dir/build
+.PHONY : aufg13/fast
+
+# Convenience name for target.
+source/CMakeFiles/aufg19.dir/rule:
+	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufg19.dir/rule
+.PHONY : source/CMakeFiles/aufg19.dir/rule
+
+# Convenience name for target.
+aufg19: source/CMakeFiles/aufg19.dir/rule
+
+.PHONY : aufg19
+
+# fast build rule for target.
+aufg19/fast:
+	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f source/CMakeFiles/aufg19.dir/build.make source/CMakeFiles/aufg19.dir/build
+.PHONY : aufg19/fast
+
+# Convenience name for target.
 source/CMakeFiles/helloworld.dir/rule:
 	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/helloworld.dir/rule
 .PHONY : source/CMakeFiles/helloworld.dir/rule
@@ -154,6 +169,33 @@ helloworld: source/CMakeFiles/helloworld.dir/rule
 helloworld/fast:
 	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/build
 .PHONY : helloworld/fast
+
+aufgabe19.o: aufgabe19.cpp.o
+
+.PHONY : aufgabe19.o
+
+# target to build an object file
+aufgabe19.cpp.o:
+	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f source/CMakeFiles/aufg19.dir/build.make source/CMakeFiles/aufg19.dir/aufgabe19.cpp.o
+.PHONY : aufgabe19.cpp.o
+
+aufgabe19.i: aufgabe19.cpp.i
+
+.PHONY : aufgabe19.i
+
+# target to preprocess a source file
+aufgabe19.cpp.i:
+	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f source/CMakeFiles/aufg19.dir/build.make source/CMakeFiles/aufg19.dir/aufgabe19.cpp.i
+.PHONY : aufgabe19.cpp.i
+
+aufgabe19.s: aufgabe19.cpp.s
+
+.PHONY : aufgabe19.s
+
+# target to generate assembly for a file
+aufgabe19.cpp.s:
+	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f source/CMakeFiles/aufg19.dir/build.make source/CMakeFiles/aufg19.dir/aufgabe19.cpp.s
+.PHONY : aufgabe19.cpp.s
 
 aufgabe_13.o: aufgabe_13.cpp.o
 
@@ -243,10 +285,14 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... tests"
 	@echo "... edit_cache"
 	@echo "... aufg13"
-	@echo "... tests"
+	@echo "... aufg19"
 	@echo "... helloworld"
+	@echo "... aufgabe19.o"
+	@echo "... aufgabe19.i"
+	@echo "... aufgabe19.s"
 	@echo "... aufgabe_13.o"
 	@echo "... aufgabe_13.i"
 	@echo "... aufgabe_13.s"
