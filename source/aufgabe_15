@@ -1,0 +1,9 @@
+Initialisierung:
+beschreibt in der Programmierung die Zuweisung eines Initial- bzw. Anfangswertes zu einem Objekt oder einer Variablen.
+Bsp.: double d = 1.3;
+
+Zuweisung:
+beschreibt Typ von Anweiung durch die eine Variable einen neuen Wert erhält.
+Bsp.: 	d=5;
+
+Eine Variable muss zuerst initialisiert werden, bevor eine erneute Zuweisung stattfinden kann. Die Initialisierung einer Variablen findet nur einmal statt, eine ZUweisung hingegen, kann beliebig oft ausgeführt werden.

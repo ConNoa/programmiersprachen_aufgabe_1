@@ -1,0 +1,31 @@
+Deklaration:
+wir benennen eine Variable und machen sie dem Compiler bekannt 
+eine Deklaration legt den Typ des Bezeichners fest.
+
+Definition legt fest, an welche Entität (an welches Objekt, 
+an welche Funktion) ein Bezeichner gebunden ist.
+Es wird einer Variablen ein Speicherbereich zugeteilt.
+Dieser Speicherbereich hat eine eindeutige Adresse 
+und dient dazu Werte abspeichern zu können
+
+Deklaration kann auch ohne Definition funktionieren 
+(kommt dann bei Zeigern vor)
+
+folgendes Beispiel einer Initialisierung ist eine Deklaration und Definition:
+
+Es ist erlaubt Bezeichner mehrfach zu deklarieren.
+
+Eine Definition darf in der Regel 
+nur einmal innerhalb eines Scopes stattfinden.
+
+
+
+
+Funktionen:   int main(){}
+
+
+Variablen  			int a = 5;
+
+
+KLassen     class Klasse{}
+

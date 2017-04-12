@@ -1,0 +1,26 @@
+Typen,  Variablentypen bestimmen die Größe an Speicherplatz die für eine Variable freigehalten wird.
+
+Dateitypen bezeichnen in der Zusammenfassung von Objektmengen mit denen darauf definierten Operationen.
+
+hier im Beispiel gibt es:
+int, bool, char, double
+
+Variablen sind Namen für die Leerstelle in einem logischen oder mathematischen Ausdruck
+
+hier im Beispiel: 
+a,b,c,d,e
+
+Werte: das was sich hinter einer Variablen von einem bestimmten Variablentyp verbirgt.
+
+Hier im Beispiel:
+9, false, a, 1.3, 2, "a/two"
+
+
+const teilt dem Compiler mit, das eine deklarierte Variable, oder ein deklariertes Objekt nicht veränderbar ist
+
+"two = d" ist so gesehen nicht möglich da two schon den festen Wert 2 zugewiesen bekommen hat
+
+Typkonvertierung:
+Der Typ einer Variablen wird bei der Deklaration ein für alle mal festgelegt. MAnchmal ist es aber notwendig einen Wert von einem Variablentypen in einen anderen zu konvertieren. 
+Die geschieht durch Typkonvertierung (casten)
+Probleme kann es dabei geben, weil man Variablentypen ineinander umwandeln will, was so ohneweiteres nicht möglich ist.
