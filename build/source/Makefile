@@ -156,6 +156,21 @@ aufg19/fast:
 .PHONY : aufg19/fast
 
 # Convenience name for target.
+source/CMakeFiles/aufg110.dir/rule:
+	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufg110.dir/rule
+.PHONY : source/CMakeFiles/aufg110.dir/rule
+
+# Convenience name for target.
+aufg110: source/CMakeFiles/aufg110.dir/rule
+
+.PHONY : aufg110
+
+# fast build rule for target.
+aufg110/fast:
+	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f source/CMakeFiles/aufg110.dir/build.make source/CMakeFiles/aufg110.dir/build
+.PHONY : aufg110/fast
+
+# Convenience name for target.
 source/CMakeFiles/helloworld.dir/rule:
 	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/helloworld.dir/rule
 .PHONY : source/CMakeFiles/helloworld.dir/rule
@@ -169,6 +184,33 @@ helloworld: source/CMakeFiles/helloworld.dir/rule
 helloworld/fast:
 	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/build
 .PHONY : helloworld/fast
+
+aufgabe110_111_112.o: aufgabe110_111_112.cpp.o
+
+.PHONY : aufgabe110_111_112.o
+
+# target to build an object file
+aufgabe110_111_112.cpp.o:
+	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f source/CMakeFiles/aufg110.dir/build.make source/CMakeFiles/aufg110.dir/aufgabe110_111_112.cpp.o
+.PHONY : aufgabe110_111_112.cpp.o
+
+aufgabe110_111_112.i: aufgabe110_111_112.cpp.i
+
+.PHONY : aufgabe110_111_112.i
+
+# target to preprocess a source file
+aufgabe110_111_112.cpp.i:
+	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f source/CMakeFiles/aufg110.dir/build.make source/CMakeFiles/aufg110.dir/aufgabe110_111_112.cpp.i
+.PHONY : aufgabe110_111_112.cpp.i
+
+aufgabe110_111_112.s: aufgabe110_111_112.cpp.s
+
+.PHONY : aufgabe110_111_112.s
+
+# target to generate assembly for a file
+aufgabe110_111_112.cpp.s:
+	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f source/CMakeFiles/aufg110.dir/build.make source/CMakeFiles/aufg110.dir/aufgabe110_111_112.cpp.s
+.PHONY : aufgabe110_111_112.cpp.s
 
 aufgabe19.o: aufgabe19.cpp.o
 
@@ -285,11 +327,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... tests"
 	@echo "... edit_cache"
+	@echo "... tests"
 	@echo "... aufg13"
 	@echo "... aufg19"
+	@echo "... aufg110"
 	@echo "... helloworld"
+	@echo "... aufgabe110_111_112.o"
+	@echo "... aufgabe110_111_112.i"
+	@echo "... aufgabe110_111_112.s"
 	@echo "... aufgabe19.o"
 	@echo "... aufgabe19.i"
 	@echo "... aufgabe19.s"

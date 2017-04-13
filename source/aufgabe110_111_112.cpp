@@ -34,6 +34,26 @@ long sumMultiples()
 	return sum;
 }
 
+float volume(float r, float h)
+{
+	float vol;
+
+	vol = M_PI*r*r*h;
+
+	return vol;
+}
+
+float surface(float r, float h)
+{
+	float sf;
+
+	sf = 2*M_PI*r*(r+h);
+
+	return sf;
+
+}
+
+
 TEST_CASE("checking the checksum", "[checksum]")
 {
 	REQUIRE(checksum(116068) == 22);
@@ -51,15 +71,26 @@ TEST_CASE("checking sumMultiples", "[sumMultiples]")
 	
 }
 
+TEST_CASE("checking the volume", "[volume]")
+{
+	REQUIRE(volume(10, 10) == Approx(3141.593));
+	
+}
+
+TEST_CASE("checking the surface", "[surface]")
+{
+	REQUIRE(surface(10, 10) == Approx(1256.637));
+	
+}
 
 
 int main(int argc, char* argv[])
 {
 	
-	int c = sumMultiples();
+/*	int c = sumMultiples();
 
 	std::cout << c;
 	std::cout << " ist checksum. \n";
-
+*/
 	return Catch::Session().run( argc, argv );
 }

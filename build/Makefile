@@ -150,6 +150,19 @@ aufg19/fast:
 .PHONY : aufg19/fast
 
 #=============================================================================
+# Target rules for targets named aufg110
+
+# Build rule for target.
+aufg110: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 aufg110
+.PHONY : aufg110
+
+# fast build rule for target.
+aufg110/fast:
+	$(MAKE) -f source/CMakeFiles/aufg110.dir/build.make source/CMakeFiles/aufg110.dir/build
+.PHONY : aufg110/fast
+
+#=============================================================================
 # Target rules for targets named helloworld
 
 # Build rule for target.
@@ -173,6 +186,7 @@ help:
 	@echo "... tests"
 	@echo "... aufg13"
 	@echo "... aufg19"
+	@echo "... aufg110"
 	@echo "... helloworld"
 .PHONY : help
 
