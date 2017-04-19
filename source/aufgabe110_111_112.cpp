@@ -4,7 +4,7 @@
 #include <iostream>
 
 
-int checksum(long a)
+int checksum(long a)	//Aufgabe 1.9
 {
 	int sum = 0;
 	int m;
@@ -19,7 +19,7 @@ int checksum(long a)
 	return sum;
 }
 
-long sumMultiples()
+long sumMultiples()		//Aufgabe 1.10
 {
 	long sum = 0;
 	for(int i=1; i<=1000;i++){
@@ -34,7 +34,13 @@ long sumMultiples()
 	return sum;
 }
 
-float volume(float r, float h)
+float fract(float a)		//Aufgabe 1.11
+{
+  int n(a);
+  return a-float(n);
+}
+
+float volume(float r, float h)		//Aufgabe 1.12
 {
 	float vol;
 
@@ -43,7 +49,7 @@ float volume(float r, float h)
 	return vol;
 }
 
-float surface(float r, float h)
+float surface(float r, float h)		//Aufgabe 1.12
 {
 	float sf;
 
@@ -54,7 +60,7 @@ float surface(float r, float h)
 }
 
 
-TEST_CASE("checking the checksum", "[checksum]")
+TEST_CASE("checking the checksum", "[checksum]")	//Test Cases Aufgabe 1.9
 {
 	REQUIRE(checksum(116068) == 22);
 	REQUIRE(checksum(123456789) == 45);
@@ -64,23 +70,25 @@ TEST_CASE("checking the checksum", "[checksum]")
 	
 }
 
-TEST_CASE("checking sumMultiples", "[sumMultiples]")
+TEST_CASE("checking sumMultiples", "[sumMultiples]")		// Test Cases Aufgabe 1.10
 {
-	REQUIRE(sumMultiples() == 234168);
-	
-	
+	REQUIRE(sumMultiples() == 234168);	
 }
 
-TEST_CASE("checking the volume", "[volume]")
+TEST_CASE("checking fract", "[fract]")			//Test Cases Aufgabe 1.11
+{
+		REQUIRE(fract(1.23456) == 0.23456);
+
+}
+
+TEST_CASE("checking the volume", "[volume]")		//Test Cases Aufgabe 1.12
 {
 	REQUIRE(volume(10, 10) == Approx(3141.593));
-	
 }
 
-TEST_CASE("checking the surface", "[surface]")
+TEST_CASE("checking the surface", "[surface]")		//Test Cases Aufgabe 1.12
 {
 	REQUIRE(surface(10, 10) == Approx(1256.637));
-	
 }
 
 
