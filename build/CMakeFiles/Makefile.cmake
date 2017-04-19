@@ -51,6 +51,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "source/CMakeFiles/tests.dir/DependInfo.cmake"
   "source/CMakeFiles/aufg13.dir/DependInfo.cmake"
   "source/CMakeFiles/aufg19.dir/DependInfo.cmake"
+  "source/CMakeFiles/miletokilometer.dir/DependInfo.cmake"
   "source/CMakeFiles/aufg110.dir/DependInfo.cmake"
   "source/CMakeFiles/helloworld.dir/DependInfo.cmake"
   )

@@ -71,7 +71,7 @@ long factorial(int x)				//Aufgabe 1.13
 float binomial(int n, int k)		//Aufgabe1.14
 {
 	float b;
-	b=(factorial(n)/(factorial(k)*(factorial(n-k))));
+	b = (factorial(n)/(factorial(k)*(factorial(n-k))));
 	return b;
 }
 
@@ -88,6 +88,18 @@ bool is_prime (int n)				//Aufgabe1.15
   return true;
 }
 
+double mileToKilometer(double m)
+{
+	double k;
+	k = m*1.60934;
+	return k;
+}
+
+TEST_CASE("checking mileToKilometer", "[mileToKilometer]")			//Test Cases Aufgabe 1.9
+{
+	REQUIRE(mileToKilometer(1) == Approx(1.60934));
+	
+}
 
 TEST_CASE("checking the checksum", "[checksum]")			//Test Cases Aufgabe 1.9
 {

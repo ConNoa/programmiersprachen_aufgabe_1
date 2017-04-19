@@ -163,6 +163,19 @@ aufg19/fast:
 .PHONY : aufg19/fast
 
 #=============================================================================
+# Target rules for targets named miletokilometer
+
+# Build rule for target.
+miletokilometer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 miletokilometer
+.PHONY : miletokilometer
+
+# fast build rule for target.
+miletokilometer/fast:
+	$(MAKE) -f source/CMakeFiles/miletokilometer.dir/build.make source/CMakeFiles/miletokilometer.dir/build
+.PHONY : miletokilometer/fast
+
+#=============================================================================
 # Target rules for targets named aufg110
 
 # Build rule for target.
@@ -200,6 +213,7 @@ help:
 	@echo "... tests"
 	@echo "... aufg13"
 	@echo "... aufg19"
+	@echo "... miletokilometer"
 	@echo "... aufg110"
 	@echo "... helloworld"
 .PHONY : help

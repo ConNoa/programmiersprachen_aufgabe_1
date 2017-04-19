@@ -171,6 +171,21 @@ aufg19/fast:
 .PHONY : aufg19/fast
 
 # Convenience name for target.
+source/CMakeFiles/miletokilometer.dir/rule:
+	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/miletokilometer.dir/rule
+.PHONY : source/CMakeFiles/miletokilometer.dir/rule
+
+# Convenience name for target.
+miletokilometer: source/CMakeFiles/miletokilometer.dir/rule
+
+.PHONY : miletokilometer
+
+# fast build rule for target.
+miletokilometer/fast:
+	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f source/CMakeFiles/miletokilometer.dir/build.make source/CMakeFiles/miletokilometer.dir/build
+.PHONY : miletokilometer/fast
+
+# Convenience name for target.
 source/CMakeFiles/aufg110.dir/rule:
 	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufg110.dir/rule
 .PHONY : source/CMakeFiles/aufg110.dir/rule
@@ -335,6 +350,33 @@ helloworld.cpp.s:
 	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/helloworld.cpp.s
 .PHONY : helloworld.cpp.s
 
+mileToKilometer.o: mileToKilometer.cpp.o
+
+.PHONY : mileToKilometer.o
+
+# target to build an object file
+mileToKilometer.cpp.o:
+	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f source/CMakeFiles/miletokilometer.dir/build.make source/CMakeFiles/miletokilometer.dir/mileToKilometer.cpp.o
+.PHONY : mileToKilometer.cpp.o
+
+mileToKilometer.i: mileToKilometer.cpp.i
+
+.PHONY : mileToKilometer.i
+
+# target to preprocess a source file
+mileToKilometer.cpp.i:
+	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f source/CMakeFiles/miletokilometer.dir/build.make source/CMakeFiles/miletokilometer.dir/mileToKilometer.cpp.i
+.PHONY : mileToKilometer.cpp.i
+
+mileToKilometer.s: mileToKilometer.cpp.s
+
+.PHONY : mileToKilometer.s
+
+# target to generate assembly for a file
+mileToKilometer.cpp.s:
+	cd /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build && $(MAKE) -f source/CMakeFiles/miletokilometer.dir/build.make source/CMakeFiles/miletokilometer.dir/mileToKilometer.cpp.s
+.PHONY : mileToKilometer.cpp.s
+
 tests.o: tests.cpp.o
 
 .PHONY : tests.o
@@ -374,6 +416,7 @@ help:
 	@echo "... tests"
 	@echo "... aufg13"
 	@echo "... aufg19"
+	@echo "... miletokilometer"
 	@echo "... aufg110"
 	@echo "... helloworld"
 	@echo "... aufgabe109_bis_115.o"
@@ -391,6 +434,9 @@ help:
 	@echo "... helloworld.o"
 	@echo "... helloworld.i"
 	@echo "... helloworld.s"
+	@echo "... mileToKilometer.o"
+	@echo "... mileToKilometer.i"
+	@echo "... mileToKilometer.s"
 	@echo "... tests.o"
 	@echo "... tests.i"
 	@echo "... tests.s"
