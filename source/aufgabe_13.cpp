@@ -16,9 +16,6 @@ int main()
 		++i;
 	}
 	
-
-
-
   	std::cout << "Die Zahl ist: ";
   	std::cout << n << std::endl;
   	return 0;

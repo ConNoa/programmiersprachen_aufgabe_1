@@ -1,6 +1,7 @@
-Signatur einer Funktion
-besteht aus dem Namen der Methode, der Anzahl sowie der Reihenfolge der zuweisungskompatiblen Parameterdatentypen
-
+/*
+Signatur einer Funktion besteht aus dem Namen der Methode, 
+der Anzahl sowie der Reihenfolge der zuweisungskompatiblen Parameterdatentypen.
+*/
 #include <iostream >
 
 int var = 3;
