@@ -4,7 +4,7 @@
 #include <iostream>
 
 
-int checksum(long a)	//Aufgabe 1.9
+int checksum(long a)				//Aufgabe 1.9
 {
 	int sum = 0;
 	int m;
@@ -19,7 +19,7 @@ int checksum(long a)	//Aufgabe 1.9
 	return sum;
 }
 
-long sumMultiples()		//Aufgabe 1.10
+long sumMultiples()					//Aufgabe 1.10
 {
 	long sum = 0;
 	for(int i=1; i<=1000;i++){
@@ -34,7 +34,7 @@ long sumMultiples()		//Aufgabe 1.10
 	return sum;
 }
 
-float fract(float a)		//Aufgabe 1.11
+float fract(float a)				//Aufgabe 1.11
 {
   int n(a);
   return a-float(n);
@@ -56,11 +56,27 @@ float surface(float r, float h)		//Aufgabe 1.12
 	sf = 2*M_PI*r*(r+h);
 
 	return sf;
+}
 
+long factorial(int x)				//Aufgabe 1.13
+{
+	long p = 1;
+
+	for(int i=1; i<=x; i++){
+		p = p*i;
+	}
+	return p;
+}
+
+float binomial(int n, int k)		//Aufgabe1.14
+{
+	float b;
+	b=(factorial(n)/((factorial(k)*(factorial(n-k)))));
+	return b;
 }
 
 
-TEST_CASE("checking the checksum", "[checksum]")	//Test Cases Aufgabe 1.9
+TEST_CASE("checking the checksum", "[checksum]")			//Test Cases Aufgabe 1.9
 {
 	REQUIRE(checksum(116068) == 22);
 	REQUIRE(checksum(123456789) == 45);
@@ -75,22 +91,42 @@ TEST_CASE("checking sumMultiples", "[sumMultiples]")		// Test Cases Aufgabe 1.10
 	REQUIRE(sumMultiples() == 234168);	
 }
 
-TEST_CASE("checking fract", "[fract]")			//Test Cases Aufgabe 1.11
-{
-		REQUIRE(fract(1.23456) == 0.23456);
 
+TEST_CASE("checking fract", "[fract]")						//Test Cases Aufgabe 1.11
+{
+		REQUIRE(fract(1.23456) == Approx(0.23456));
+		REQUIRE(fract(4.98765) == Approx(0.98765));
 }
 
-TEST_CASE("checking the volume", "[volume]")		//Test Cases Aufgabe 1.12
+
+TEST_CASE("checking the volume", "[volume]")				//Test Cases Aufgabe 1.12
 {
 	REQUIRE(volume(10, 10) == Approx(3141.593));
 }
 
-TEST_CASE("checking the surface", "[surface]")		//Test Cases Aufgabe 1.12
+TEST_CASE("checking the surface", "[surface]")				//Test Cases Aufgabe 1.12
 {
 	REQUIRE(surface(10, 10) == Approx(1256.637));
 }
 
+
+TEST_CASE("checking factorial", "[factorial]")				//Test Cases Aufgabe 1.13
+{
+		REQUIRE(factorial(5) == 120);
+		REQUIRE(factorial(3) == 6);
+
+}
+
+TEST_CASE("checking binomial", "[binomial]")				//Test Cases Aufgabe 1.14
+{
+		REQUIRE(binomial(5, 3) == 10);
+		REQUIRE(binomial(5, 2) == 10);
+		REQUIRE(binomial(7, 2) == 21);
+		REQUIRE(binomial(7, 3) == 35);
+		REQUIRE(binomial(7, 4) == 35);
+
+
+}
 
 int main(int argc, char* argv[])
 {
