@@ -47,6 +47,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "source/CMakeFiles/aufgabenabschnitt.dir/DependInfo.cmake"
   "source/CMakeFiles/tests.dir/DependInfo.cmake"
   "source/CMakeFiles/aufg13.dir/DependInfo.cmake"
   "source/CMakeFiles/aufg19.dir/DependInfo.cmake"

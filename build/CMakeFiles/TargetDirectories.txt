@@ -1,6 +1,7 @@
 /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build/CMakeFiles/rebuild_cache.dir
 /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build/CMakeFiles/edit_cache.dir
 /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build/source/CMakeFiles/rebuild_cache.dir
+/Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build/source/CMakeFiles/aufgabenabschnitt.dir
 /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build/source/CMakeFiles/edit_cache.dir
 /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build/source/CMakeFiles/tests.dir
 /Users/Blueshift/Desktop/Programmiersprachen/programmiersprachen_aufgabe_1/build/source/CMakeFiles/aufg13.dir

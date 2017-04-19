@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named aufgabenabschnitt
+
+# Build rule for target.
+aufgabenabschnitt: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 aufgabenabschnitt
+.PHONY : aufgabenabschnitt
+
+# fast build rule for target.
+aufgabenabschnitt/fast:
+	$(MAKE) -f source/CMakeFiles/aufgabenabschnitt.dir/build.make source/CMakeFiles/aufgabenabschnitt.dir/build
+.PHONY : aufgabenabschnitt/fast
+
+#=============================================================================
 # Target rules for targets named tests
 
 # Build rule for target.
@@ -183,6 +196,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... aufgabenabschnitt"
 	@echo "... tests"
 	@echo "... aufg13"
 	@echo "... aufg19"

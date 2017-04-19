@@ -71,11 +71,11 @@ long factorial(int x)				//Aufgabe 1.13
 float binomial(int n, int k)		//Aufgabe1.14
 {
 	float b;
-	b=(factorial(n)/((factorial(k)*(factorial(n-k)))));
+	b=(factorial(n)/(factorial(k)*(factorial(n-k))));
 	return b;
 }
 
-bool is_prime (int n)
+bool is_prime (int n)				//Aufgabe1.15
 {
   for (int i = 2; i < n; i++)
   {
@@ -138,7 +138,7 @@ TEST_CASE("checking binomial", "[binomial]")				//Test Cases Aufgabe 1.14
 		REQUIRE(binomial(7, 4) == 35);
 }
 
-TEST_CASE("checking is_prime", "[is_prime]")		// Test Cases Aufgabe 1.10
+TEST_CASE("checking is_prime", "[is_prime]")				// Test Cases Aufgabe 1.15
 {
 	REQUIRE(is_prime(10) == false);	
 	REQUIRE(is_prime(9) == false);	
