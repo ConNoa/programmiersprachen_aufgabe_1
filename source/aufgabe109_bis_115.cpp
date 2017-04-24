@@ -77,6 +77,11 @@ float binomial(int n, int k)		//Aufgabe1.14
 
 bool is_prime (int n)				//Aufgabe1.15
 {
+	if(n<2)
+	{
+		return false;
+	}
+
   for (int i = 2; i < n; i++)
   {
     if ( n%i == 0)
@@ -148,6 +153,7 @@ TEST_CASE("checking binomial", "[binomial]")				//Test Cases Aufgabe 1.14
 		REQUIRE(binomial(7, 2) == 21);
 		REQUIRE(binomial(7, 3) == 35);
 		REQUIRE(binomial(7, 4) == 35);
+		REQUIRE(binomial(5, 0) == 1);
 }
 
 TEST_CASE("checking is_prime", "[is_prime]")				// Test Cases Aufgabe 1.15
@@ -158,6 +164,9 @@ TEST_CASE("checking is_prime", "[is_prime]")				// Test Cases Aufgabe 1.15
 	REQUIRE(is_prime(25) == false);	
 	REQUIRE(is_prime(7) == true);	
 	REQUIRE(is_prime(13) == true);	
+	REQUIRE(is_prime(0) == false);
+	REQUIRE(is_prime(1) == false);
+	REQUIRE(is_prime(2) == true);
 
 }
 
