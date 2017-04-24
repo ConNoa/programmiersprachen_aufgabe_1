@@ -1,59 +1,44 @@
-Glossar:
+C++					Objetorientierte Programmiersprache		
+Quellcode			Für Menschen verstehbarer Code der in Maschinensprache compiled wird
+Compiler			Übersetzt den Quellcode in eine für den Computer verstehbare Sprach(Maschinencode)
+Linker				Verbindet die einzelnen Bestandteile eines Programmes (versch. Methoden z.Bsp.)
+Objektcode			zwischenergebniss des compilers enthält vorgeteilten code (bibliotheken) welcher mit anderen codes verlinkt werden
+Ausführbare Datei	ein Programm (meistens exe.)
+main()				leitet den Kontrollfluss von hier werden z.Bsp. Methoden aufgerufen
+#include			zum einbetten von quellcode wie z.Bsp. mathe Bibliotheken mittels Präprozeesor
+					gesammter quellcode wird an anfang der datei kopiert
+					#include
+					<cmath> 
+Kommentar			//Zeile /* Abschniitt */
+Header				.h externe Datei oft zum externen deklarieren mit #include eingebettet
+Programm			Ausführbare Datei meist viel Umfangreicher als eine einzelne Methode (besteht aus 1000enden)
+Ausgabe				Wiedergabe des Programms, der Methode input>methode macht>aufgabe
+std::cout			für ausgabe <<"sprache"<< a*b 
+std::cin			für einlesen einer eingabe
+<<					zeiger nach links
+>>					zeiger nach rechts
+Funktion			quellqode mit bestimmter aufgabe der über funktoinssignatur angewendet werden kann
+Funktionssignatur	funktion(a, b)
+Deklaration			dem compiler sagen es gibt etwas int hallo();
+Definition			dem compiler sagen das er das deklarierte mit information füllen soll
+					int hallo(){inhalt};
+Typ					datentypen int=ganzzahl bool=warheitswert
+					char
+					int 
+					double
+					bool
+					void
 
-C++
-
-Quellcode
-
-Compiler
-
-Linker
-
-Objektcode
-
-Ausführbare Datei
-
-main()
-
-#include
-
-Kommentar
-
-Header
-
-Programm
-
-Ausgabe
-
-std::cout
-
-std::cin
-
-<<
-
->>
-
-Funktion
-
-Funktionssignatur
-
-Deklaration
-
-Definition
-
-Typ
-
-Typkonvertierung
-
-Variable
-
-Name
-
-Wert
-
-Initiallisierung
-
-Zuweisung
-
-const
-
-Gültigkeitsbereich
+Typkonvertierung	datentypen umwandeln 
+					double a= 3.4;
+					int b=a;
+					a=3
+Variable			platzhalter der mit daten belegt werden kann
+Name				name einer funktion 
+Wert				zuweisung für variable
+Initialisierung		vorausgesetzte definition der compiler erstellt etwas mit bestimmten wert
+					int a =3;
+Zuweisung			variable bekommt wert
+					a = b;
+const				typ der variable darf nicht geändert werden 
+Gültigkeitsbereich	scope in dem eine variable definiert ist
